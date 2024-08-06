@@ -1,0 +1,40 @@
+diff a/web/header1.jsp b/web/header1.jsp	(rejected hunks)
+@@ -105,25 +105,23 @@
+ 
+                 <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                     <div class="navbar-nav mx-auto py-0">
+-                        <a href="${pageContext.request.contextPath}/home" id="nav-item-home" class="nav-item nav-link">Home</a>
+-                        <a href="course.jsp" class="nav-item nav-link" id="nav-item-course">Subjects</a>
+-                        <a href="course.html" class="nav-item nav-link" id="nav-item-classes">Classes</a>
+-                        <a href="contact.html" class="nav-item nav-link" id="nav-item-contact">Contact</a>
+-                        <a href="${pageContext.request.contextPath}/flashcard" id="nav-item-flashcard" class="nav-item nav-link">Flashcard</a>
++                        <a href="${pageContext.request.contextPath}/home" 
++                           id="nav-item-home" class="nav-item nav-link text-dark">Home</a>
++                        <a href="${pageContext.request.contextPath}/course" 
++                           class="nav-item nav-link text-dark" id="nav-item-course">Subjects</a>
++                        <a href="course.jsp" class="nav-item nav-link text-dark" id="nav-item-classes">Classes</a>
++                        <a href="${pageContext.request.contextPath}/contact" 
++                           class="nav-item nav-link text-dark" id="nav-item-contact">Contact</a>
++                        <a href="${pageContext.request.contextPath}/flashcard" 
++                           id="nav-item-flashcard" class="nav-item nav-link text-dark">Flashcard</a>
+                     </div>
+                 </div>
+ 
+                 <c:if test="${sessionScope.user != null}">
+-                    <c:set var="currentPage" value="${pageContext.request.requestURI}"></c:set>
+-                    <c:set var="avt" value="${sessionScope.user.avatar}"></c:set>
+-                    <c:if test="${currentPage.contains('userdetails.jsp') || currentPage.contains('questiondetails.jsp')
+-                                  || currentPage.contains('newquestion.jsp') || currentPage.contains('newuser.jsp')}">
+-                        <c:set var="avatar" value="../${avt}"></c:set>
+-                    </c:if>
+-                    <c:if test="${!currentPage.contains('userdetails.jsp') && !currentPage.contains('questiondetails.jsp')
+-                                  && !currentPage.contains('newquestion.jsp') && !currentPage.contains('newuser.jsp')}">
+-                        <c:set var="avatar" value="${avt}"></c:set>
+-                    </c:if>
++                    <c:set var="avatar" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/${sessionScope.user.avatar}">
++
++                    </c:set>
++
+                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                         <ul class="navbar-nav flex-row align-items-center ms-auto">
+                             <!-- Place this tag where you want the button to render. -->

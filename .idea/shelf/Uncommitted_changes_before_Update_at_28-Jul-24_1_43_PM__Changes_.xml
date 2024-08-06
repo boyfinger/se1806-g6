@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_28-Jul-24_1_43_PM_[Changes]" date="1722149032436" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_1_43_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28-Jul-24 1:43 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/artifacts/se1808_g6_Web_exploded/WEB-INF/classes/model/Course/CourseDetail.class" />
+    <option name="AFTER_PATH" value="out/artifacts/se1808_g6_Web_exploded/WEB-INF/classes/model/Course/CourseDetail.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_1_43_PM_[Changes]/CourseDetail.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/artifacts/se1808_g6_Web_exploded/WEB-INF/classes/model/Course/Course.class" />
+    <option name="AFTER_PATH" value="out/artifacts/se1808_g6_Web_exploded/WEB-INF/classes/model/Course/Course.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-Jul-24_1_43_PM_[Changes]/Course.class" />
+  </binary>
+</changelist>

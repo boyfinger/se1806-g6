@@ -1,0 +1,1035 @@
+Index: web/header1.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@page isELIgnored=\"false\" %>\r\n<%@taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\r\n<%@page contentType=\"text/html\" pageEncoding=\"UTF-8\" %>\r\n<!DOCTYPE html>\r\n<html\r\n        lang=\"en\"\r\n        class=\"light-style layout-menu-fixed layout-compact\"\r\n        dir=\"ltr\"\r\n        data-theme=\"theme-default\"\r\n        data-assets-path=\"assets/\"\r\n        data-template=\"vertical-menu-template-free\">\r\n<head>\r\n    <title>Tables - Basic Tables | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>\r\n    <meta charset=\"utf-8\">\r\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\r\n    <meta content=\"Free HTML Templates\" name=\"keywords\">\r\n    <meta content=\"Free HTML Templates\" name=\"description\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"assets/img/favicon/favicon.ico\"/>\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"/>\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin/>\r\n    <link\r\n            href=\"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap\"\r\n            rel=\"stylesheet\"/>\r\n\r\n    <link rel=\"stylesheet\" href=\"assets/vendor/fonts/boxicons.css\"/>\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Core CSS -->\r\n    <link rel=\"stylesheet\" href=\"assets/vendor/css/core.css\" class=\"template-customizer-core-css\"/>\r\n    <link rel=\"stylesheet\" href=\"assets/vendor/css/theme-default.css\" class=\"template-customizer-theme-css\"/>\r\n    <link rel=\"stylesheet\" href=\"assets/css/demo.css\"/>\r\n\r\n    <!-- Vendors CSS -->\r\n    <link rel=\"stylesheet\" href=\"assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css\"/>\r\n\r\n    <!-- Page CSS -->\r\n\r\n    <!-- Helpers -->\r\n    <script src=\"assets/vendor/js/helpers.js\"></script>\r\n    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->\r\n    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->\r\n    <script src=\"assets/js/config.js\"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- Topbar Start -->\r\n<div class=\"container-fluid bg-dark\">\r\n    <div class=\"row py-2 px-lg-5\">\r\n        <div class=\"col-lg-6 text-center text-lg-left mb-2 mb-lg-0\">\r\n            <div class=\"d-inline-flex align-items-center text-white\">\r\n                <small><i class=\"fa fa-phone-alt mr-2\"></i>+012 345 6789</small>\r\n                <small class=\"px-3\">|</small>\r\n                <small><i class=\"fa fa-envelope mr-2\"></i>info@example.com</small>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-lg-6 text-center text-lg-right\">\r\n            <div class=\"d-inline-flex align-items-center\">\r\n                <a class=\"text-white px-2\" target=\"_blank\" href=\"https://www.facebook.com/boyfingerr/\">\r\n                    <i class=\"fab fa-facebook-f\"></i>\r\n                </a>\r\n                <a class=\"text-white px-2\" target=\"_blank\" href=\"https://twitter.com/boyfinger42\">\r\n                    <i class=\"fab fa-twitter\"></i>\r\n                </a>\r\n                <a class=\"text-white px-2\" target=\"_blank\" href=\"https://www.linkedin.com/\">\r\n                    <i class=\"fab fa-linkedin-in\"></i>\r\n                </a>\r\n                <a class=\"text-white px-2\" target=\"_blank\" href=\"https://www.instagram.com/\">\r\n                    <i class=\"fab fa-instagram\"></i>\r\n                </a>\r\n                <a class=\"text-white pl-2\" target=\"_blank\" href=\"https://www.youtube.com/@JOISPOI\">\r\n                    <i class=\"fab fa-youtube\"></i>\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- Topbar End -->\r\n\r\n\r\n<!-- Navbar Start -->\r\n<div class=\"container-fluid p-0\">\r\n    <nav class=\"navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5\">\r\n        <a href=\"${pageContext.request.contextPath}/home\" class=\"navbar-brand ml-lg-3\">\r\n            <h1 class=\"m-0 text-uppercase text-primary\"><i class=\"fa fa-book-reader mr-3\"></i>KRS</h1>\r\n        </a>\r\n        <button type=\"button\" class=\"navbar-toggler\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\">\r\n            <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n\r\n        <div class=\"collapse navbar-collapse justify-content-between px-lg-3\" id=\"navbarCollapse\">\r\n            <div class=\"navbar-nav mx-auto py-0\">\r\n                <a href=\"${pageContext.request.contextPath}/home\" id=\"nav-item-home\" class=\"nav-item nav-link\">Home</a>\r\n                <a href=\"${pageContext.request.contextPath}/course\" class=\"nav-item nav-link\" id=\"nav-item-course\">Subjects</a>\r\n                <a href=\"course.html\" class=\"nav-item nav-link\" id=\"nav-item-classes\">Classes</a>\r\n                <a href=\"contact.html\" class=\"nav-item nav-link\" id=\"nav-item-contact\">Contact</a>\r\n                <a href=\"${pageContext.request.contextPath}/flashcard\" id=\"nav-item-flashcard\"\r\n                   class=\"nav-item nav-link\">Flashcard</a>\r\n            </div>\r\n        </div>\r\n\r\n        <c:if test=\"${sessionScope.user != null}\">\r\n            <c:set var=\"currentPage\" value=\"${pageContext.request.requestURI}\"></c:set>\r\n            <c:set var=\"avt\" value=\"${sessionScope.user.avatar}\"></c:set>\r\n            <c:if test=\"${currentPage.contains('userdetails.jsp') || currentPage.contains('questiondetails.jsp')\r\n                                  || currentPage.contains('newquestion.jsp') || currentPage.contains('newuser.jsp')}\">\r\n                <c:set var=\"avatar\" value=\"../${avt}\"></c:set>\r\n            </c:if>\r\n            <c:if test=\"${!currentPage.contains('userdetails.jsp') && !currentPage.contains('questiondetails.jsp')\r\n                                  && !currentPage.contains('newquestion.jsp') && !currentPage.contains('newuser.jsp')}\">\r\n                <c:set var=\"avatar\" value=\"${avt}\"></c:set>\r\n            </c:if>\r\n            <div class=\"navbar-nav-right d-flex align-items-center\" id=\"navbar-collapse\">\r\n                <ul class=\"navbar-nav flex-row align-items-center ms-auto\">\r\n                    <!-- Place this tag where you want the button to render. -->\r\n\r\n\r\n                    <!-- User -->\r\n                    <li class=\"nav-item navbar-dropdown dropdown-user dropdown\">\r\n                        <a class=\"nav-link dropdown-toggle hide-arrow\" href=\"javascript:void(0);\"\r\n                           data-bs-toggle=\"dropdown\">\r\n                            <div class=\"avatar avatar-online\">\r\n                                <img src=\"${avatar}\" alt class=\"w-px-40 h-auto rounded-circle\"/>\r\n                            </div>\r\n                        </a>\r\n                        <ul class=\"dropdown-menu dropdown-menu-end\">\r\n                            <li>\r\n                                <a class=\"dropdown-item\" href=\"#\">\r\n                                    <div class=\"d-flex\">\r\n                                        <div class=\"flex-shrink-0 me-3\">\r\n                                            <div class=\"avatar avatar-online\">\r\n                                                <img src=\"${avatar}\" alt class=\"w-px-40 h-auto rounded-circle\"/>\r\n                                            </div>\r\n                                        </div>\r\n                                        <div class=\"flex-grow-1\">\r\n                                            <span class=\"fw-medium d-block\">${sessionScope.user.name}</span>\r\n                                            <small class=\"text-muted\">${sessionScope.user.r.name}</small>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n                            <li>\r\n                                <div class=\"dropdown-divider\"></div>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"dropdown-item\" href=\"profile.jsp\">\r\n                                    <i class=\"bx bx-user me-2\"></i>\r\n                                    <span class=\"align-middle\">My Profile</span>\r\n                                </a>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"dropdown-item\" href=\"${pageContext.request.contextPath}/dashboard\">\r\n                                    <i class=\"bx bx-bar-chart me-2\"></i>\r\n                                    <span class=\"align-middle\">Dashboard</span>\r\n                                </a>\r\n                            </li>\r\n                            <li>\r\n                                <div class=\"dropdown-divider\"></div>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"dropdown-item\" href=\"${pageContext.request.contextPath}/logout\">\r\n                                    <i class=\"bx bx-power-off me-2\"></i>\r\n                                    <span class=\"align-middle\">Log Out</span>\r\n                                </a>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n                    <!--/ User -->\r\n                </ul>\r\n            </div>\r\n        </c:if>\r\n        <c:if test=\"${sessionScope.user == null}\">\r\n            <div class=\"navbar-nav-right d-flex align-items-center\" id=\"navbar-collapse\">\r\n                <a href=\"${pageContext.request.contextPath}/login.jsp\"\r\n                   class=\"btn btn-primary py-2 px-4 d-none d-lg-block mr-3\">Login</a>\r\n                <a href=\"${pageContext.request.contextPath}/signup.jsp\"\r\n                   class=\"btn btn-primary py-2 px-4 d-none d-lg-block\">Sign up</a>\r\n            </div>\r\n        </c:if>\r\n\r\n\r\n    </nav>\r\n</div>\r\n<!-- Navbar End -->\r\n\r\n<script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>\r\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js\"></script>\r\n<script src=\"lib/easing/easing.min.js\"></script>\r\n<script src=\"lib/waypoints/waypoints.min.js\"></script>\r\n<script src=\"lib/counterup/counterup.min.js\"></script>\r\n<script src=\"lib/owlcarousel/owl.carousel.min.js\"></script>\r\n\r\n<!-- Template Javascript -->\r\n<script src=\"js/main.js\"></script>\r\n\r\n<!-- Core JS -->\r\n<!-- build:js assets/vendor/js/core.js -->\r\n\r\n<script src=\"assets/vendor/libs/jquery/jquery.js\"></script>\r\n<script src=\"assets/vendor/libs/popper/popper.js\"></script>\r\n<script src=\"assets/vendor/js/bootstrap.js\"></script>\r\n<script src=\"assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js\"></script>\r\n<script src=\"assets/vendor/js/menu.js\"></script>\r\n\r\n<!-- endbuild -->\r\n\r\n<!-- Vendors JS -->\r\n\r\n<!-- Main JS -->\r\n<script src=\"assets/js/main.js\"></script>\r\n\r\n<!-- Page JS -->\r\n\r\n<!-- Place this tag in your head or just before your close body tag. -->\r\n<script async defer src=\"https://buttons.github.io/buttons.js\"></script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/header1.jsp b/web/header1.jsp
+--- a/web/header1.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/header1.jsp	(date 1721271842964)
+@@ -1,233 +1,230 @@
+ <%@page isELIgnored="false" %>
+ <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+-<%@page contentType="text/html" pageEncoding="UTF-8" %>
++<%@page contentType="text/html" pageEncoding="UTF-8"%>
+ <!DOCTYPE html>
+ <html
+-        lang="en"
+-        class="light-style layout-menu-fixed layout-compact"
+-        dir="ltr"
+-        data-theme="theme-default"
+-        data-assets-path="assets/"
+-        data-template="vertical-menu-template-free">
+-<head>
+-    <title>Tables - Basic Tables | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+-    <meta charset="utf-8">
+-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+-    <meta content="Free HTML Templates" name="keywords">
+-    <meta content="Free HTML Templates" name="description">
++    lang="en"
++    class="light-style layout-menu-fixed layout-compact"
++    dir="ltr"
++    data-theme="theme-default"
++    data-assets-path="assets/"
++    data-template="vertical-menu-template-free">
++    <head>
++        <title>Tables - Basic Tables | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
++        <meta charset="utf-8">
++        <meta content="width=device-width, initial-scale=1.0" name="viewport">
++        <meta content="Free HTML Templates" name="keywords">
++        <meta content="Free HTML Templates" name="description">
+ 
+-    <!-- Favicon -->
+-    <link href="img/favicon.ico" rel="icon">
+-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico"/>
++        <!-- Favicon -->
++        <link href="img/favicon.ico" rel="icon">
++        <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+ 
+-    <!-- Google Web Fonts -->
+-    <link rel="preconnect" href="https://fonts.gstatic.com">
+-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+-          rel="stylesheet">
++        <!-- Google Web Fonts -->
++        <link rel="preconnect" href="https://fonts.gstatic.com">
++        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+ 
+-    <!-- Font Awesome -->
+-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
++        <!-- Font Awesome -->
++        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+-    <link
++        <link rel="preconnect" href="https://fonts.googleapis.com" />
++        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++        <link
+             href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+-            rel="stylesheet"/>
++            rel="stylesheet" />
+ 
+-    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css"/>
++        <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+ 
+-    <!-- Libraries Stylesheet -->
+-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
++        <!-- Libraries Stylesheet -->
++        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ 
+-    <!-- Customized Bootstrap Stylesheet -->
+-    <link href="css/style.css" rel="stylesheet">
++        <!-- Customized Bootstrap Stylesheet -->
++        <link href="css/style.css" rel="stylesheet">
+ 
+-    <!-- Core CSS -->
+-    <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css"/>
+-    <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css"/>
+-    <link rel="stylesheet" href="assets/css/demo.css"/>
++        <!-- Core CSS -->
++        <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
++        <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
++        <link rel="stylesheet" href="assets/css/demo.css" />
+ 
+-    <!-- Vendors CSS -->
+-    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"/>
++        <!-- Vendors CSS -->
++        <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+ 
+-    <!-- Page CSS -->
++        <!-- Page CSS -->
+ 
+-    <!-- Helpers -->
+-    <script src="assets/vendor/js/helpers.js"></script>
+-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+-    <script src="assets/js/config.js"></script>
+-</head>
++        <!-- Helpers -->
++        <script src="assets/vendor/js/helpers.js"></script>
++        <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
++        <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
++        <script src="assets/js/config.js"></script>
++    </head>
+ 
+-<body>
+-<!-- Topbar Start -->
+-<div class="container-fluid bg-dark">
+-    <div class="row py-2 px-lg-5">
+-        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+-            <div class="d-inline-flex align-items-center text-white">
+-                <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+-                <small class="px-3">|</small>
+-                <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+-            </div>
+-        </div>
+-        <div class="col-lg-6 text-center text-lg-right">
+-            <div class="d-inline-flex align-items-center">
+-                <a class="text-white px-2" target="_blank" href="https://www.facebook.com/boyfingerr/">
+-                    <i class="fab fa-facebook-f"></i>
+-                </a>
+-                <a class="text-white px-2" target="_blank" href="https://twitter.com/boyfinger42">
+-                    <i class="fab fa-twitter"></i>
+-                </a>
+-                <a class="text-white px-2" target="_blank" href="https://www.linkedin.com/">
+-                    <i class="fab fa-linkedin-in"></i>
+-                </a>
+-                <a class="text-white px-2" target="_blank" href="https://www.instagram.com/">
+-                    <i class="fab fa-instagram"></i>
+-                </a>
+-                <a class="text-white pl-2" target="_blank" href="https://www.youtube.com/@JOISPOI">
+-                    <i class="fab fa-youtube"></i>
+-                </a>
+-            </div>
+-        </div>
+-    </div>
+-</div>
+-<!-- Topbar End -->
++    <body>
++        <!-- Topbar Start -->
++        <div class="container-fluid bg-dark">
++            <div class="row py-2 px-lg-5">
++                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
++                    <div class="d-inline-flex align-items-center text-white">
++                        <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
++                        <small class="px-3">|</small>
++                        <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
++                    </div>
++                </div>
++                <div class="col-lg-6 text-center text-lg-right">
++                    <div class="d-inline-flex align-items-center">
++                        <a class="text-white px-2" target="_blank" href="https://www.facebook.com/boyfingerr/">
++                            <i class="fab fa-facebook-f"></i>
++                        </a>
++                        <a class="text-white px-2" target="_blank" href="https://twitter.com/boyfinger42">
++                            <i class="fab fa-twitter"></i>
++                        </a>
++                        <a class="text-white px-2" target="_blank" href="https://www.linkedin.com/">
++                            <i class="fab fa-linkedin-in"></i>
++                        </a>
++                        <a class="text-white px-2" target="_blank" href="https://www.instagram.com/">
++                            <i class="fab fa-instagram"></i>
++                        </a>
++                        <a class="text-white pl-2" target="_blank" href="https://www.youtube.com/@JOISPOI">
++                            <i class="fab fa-youtube"></i>
++                        </a>
++                    </div>
++                </div>
++            </div>
++        </div>
++        <!-- Topbar End -->
+ 
+ 
+-<!-- Navbar Start -->
+-<div class="container-fluid p-0">
+-    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+-        <a href="${pageContext.request.contextPath}/home" class="navbar-brand ml-lg-3">
+-            <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>KRS</h1>
+-        </a>
+-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+-            <span class="navbar-toggler-icon"></span>
+-        </button>
++        <!-- Navbar Start -->
++        <div class="container-fluid p-0">
++            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
++                <a href="${pageContext.request.contextPath}/home" class="navbar-brand ml-lg-3">
++                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>KRS</h1>
++                </a>
++                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
++                    <span class="navbar-toggler-icon"></span>
++                </button>
+ 
+-        <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+-            <div class="navbar-nav mx-auto py-0">
+-                <a href="${pageContext.request.contextPath}/home" id="nav-item-home" class="nav-item nav-link">Home</a>
+-                <a href="${pageContext.request.contextPath}/course" class="nav-item nav-link" id="nav-item-course">Subjects</a>
+-                <a href="course.html" class="nav-item nav-link" id="nav-item-classes">Classes</a>
+-                <a href="contact.html" class="nav-item nav-link" id="nav-item-contact">Contact</a>
+-                <a href="${pageContext.request.contextPath}/flashcard" id="nav-item-flashcard"
+-                   class="nav-item nav-link">Flashcard</a>
+-            </div>
+-        </div>
++                <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
++                    <div class="navbar-nav mx-auto py-0">
++                        <a href="${pageContext.request.contextPath}/home" 
++                           id="nav-item-home" class="nav-item nav-link text-dark">Home</a>
++                        <a href="${pageContext.request.contextPath}/course" 
++                           class="nav-item nav-link text-dark" id="nav-item-course">Subjects</a>
++                        <a href="${pageContext.request.contextPath}/course" 
++                           class="nav-item nav-link text-dark" id="nav-item-classes">Classes</a>
++                        <a href="${pageContext.request.contextPath}/contact" 
++                           class="nav-item nav-link text-dark" id="nav-item-contact">Contact</a>
++                        <a href="${pageContext.request.contextPath}/flashcard" 
++                           id="nav-item-flashcard" class="nav-item nav-link text-dark">Flashcard</a>
++                    </div>
++                </div>
+ 
+-        <c:if test="${sessionScope.user != null}">
+-            <c:set var="currentPage" value="${pageContext.request.requestURI}"></c:set>
+-            <c:set var="avt" value="${sessionScope.user.avatar}"></c:set>
+-            <c:if test="${currentPage.contains('userdetails.jsp') || currentPage.contains('questiondetails.jsp')
+-                                  || currentPage.contains('newquestion.jsp') || currentPage.contains('newuser.jsp')}">
+-                <c:set var="avatar" value="../${avt}"></c:set>
+-            </c:if>
+-            <c:if test="${!currentPage.contains('userdetails.jsp') && !currentPage.contains('questiondetails.jsp')
+-                                  && !currentPage.contains('newquestion.jsp') && !currentPage.contains('newuser.jsp')}">
+-                <c:set var="avatar" value="${avt}"></c:set>
+-            </c:if>
+-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+-                <ul class="navbar-nav flex-row align-items-center ms-auto">
+-                    <!-- Place this tag where you want the button to render. -->
++                <c:if test="${sessionScope.user != null}">
++                    <c:set var="avatar" value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/${sessionScope.user.avatar}">
++
++                    </c:set>
++
++                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
++                        <ul class="navbar-nav flex-row align-items-center ms-auto">
++                            <!-- Place this tag where you want the button to render. -->
+ 
+ 
+-                    <!-- User -->
+-                    <li class="nav-item navbar-dropdown dropdown-user dropdown">
+-                        <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+-                           data-bs-toggle="dropdown">
+-                            <div class="avatar avatar-online">
+-                                <img src="${avatar}" alt class="w-px-40 h-auto rounded-circle"/>
+-                            </div>
+-                        </a>
+-                        <ul class="dropdown-menu dropdown-menu-end">
+-                            <li>
+-                                <a class="dropdown-item" href="#">
+-                                    <div class="d-flex">
+-                                        <div class="flex-shrink-0 me-3">
+-                                            <div class="avatar avatar-online">
+-                                                <img src="${avatar}" alt class="w-px-40 h-auto rounded-circle"/>
+-                                            </div>
+-                                        </div>
+-                                        <div class="flex-grow-1">
+-                                            <span class="fw-medium d-block">${sessionScope.user.name}</span>
+-                                            <small class="text-muted">${sessionScope.user.r.name}</small>
+-                                        </div>
+-                                    </div>
+-                                </a>
+-                            </li>
+-                            <li>
+-                                <div class="dropdown-divider"></div>
+-                            </li>
+-                            <li>
+-                                <a class="dropdown-item" href="profile.jsp">
+-                                    <i class="bx bx-user me-2"></i>
+-                                    <span class="align-middle">My Profile</span>
+-                                </a>
+-                            </li>
+-                            <li>
+-                                <a class="dropdown-item" href="${pageContext.request.contextPath}/dashboard">
+-                                    <i class="bx bx-bar-chart me-2"></i>
+-                                    <span class="align-middle">Dashboard</span>
+-                                </a>
+-                            </li>
+-                            <li>
+-                                <div class="dropdown-divider"></div>
+-                            </li>
+-                            <li>
+-                                <a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
+-                                    <i class="bx bx-power-off me-2"></i>
+-                                    <span class="align-middle">Log Out</span>
+-                                </a>
+-                            </li>
+-                        </ul>
+-                    </li>
+-                    <!--/ User -->
+-                </ul>
+-            </div>
+-        </c:if>
+-        <c:if test="${sessionScope.user == null}">
+-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+-                <a href="${pageContext.request.contextPath}/login.jsp"
+-                   class="btn btn-primary py-2 px-4 d-none d-lg-block mr-3">Login</a>
+-                <a href="${pageContext.request.contextPath}/signup.jsp"
+-                   class="btn btn-primary py-2 px-4 d-none d-lg-block">Sign up</a>
+-            </div>
+-        </c:if>
++                            <!-- User -->
++                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
++                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
++                                    <div class="avatar avatar-online">
++                                        <img src="${avatar}" alt class="w-px-40 h-auto rounded-circle" />
++                                    </div>
++                                </a>
++                                <ul class="dropdown-menu dropdown-menu-end">
++                                    <li>
++                                        <a class="dropdown-item" href="#">
++                                            <div class="d-flex">
++                                                <div class="flex-shrink-0 me-3">
++                                                    <div class="avatar avatar-online">
++                                                        <img src="${avatar}" alt class="w-px-40 h-auto rounded-circle" />
++                                                    </div>
++                                                </div>
++                                                <div class="flex-grow-1">
++                                                    <span class="fw-medium d-block">${sessionScope.user.name}</span>
++                                                    <small class="text-muted">${sessionScope.user.r.name}</small>
++                                                </div>
++                                            </div>
++                                        </a>
++                                    </li>
++                                    <li>
++                                        <div class="dropdown-divider"></div>
++                                    </li>
++                                    <li>
++                                        <a class="dropdown-item" href="profile.jsp">
++                                            <i class="bx bx-user me-2"></i>
++                                            <span class="align-middle">My Profile</span>
++                                        </a>
++                                    </li>
++                                    <c:if test="${sessionScope.user.role < 2}">
++                                        <li>
++                                            <a class="dropdown-item" href="${pageContext.request.contextPath}/dashboard">
++                                                <i class="bx bx-bar-chart me-2"></i>
++                                                <span class="align-middle">Dashboard</span>
++                                            </a>
++                                        </li>
++                                    </c:if>
++                                    <li>
++                                        <div class="dropdown-divider"></div>
++                                    </li>
++                                    <li>
++                                        <a class="dropdown-item" href="${pageContext.request.contextPath}/logout">
++                                            <i class="bx bx-power-off me-2"></i>
++                                            <span class="align-middle">Log Out</span>
++                                        </a>
++                                    </li>
++                                </ul>
++                            </li>
++                            <!--/ User -->
++                        </ul>
++                    </div>
++                </c:if>
++                <c:if test="${sessionScope.user == null}">
++                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
++                        <a href="${pageContext.request.contextPath}/login.jsp" class="btn btn-primary py-2 px-4 d-none d-lg-block mr-3">Login</a>
++                        <a href="${pageContext.request.contextPath}/signup.jsp" class="btn btn-primary py-2 px-4 d-none d-lg-block">Sign up</a>
++                    </div>
++                </c:if>
+ 
+ 
+-    </nav>
+-</div>
+-<!-- Navbar End -->
++
++            </nav>
++        </div>
++        <!-- Navbar End -->
+ 
+-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+-<script src="lib/easing/easing.min.js"></script>
+-<script src="lib/waypoints/waypoints.min.js"></script>
+-<script src="lib/counterup/counterup.min.js"></script>
+-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
++        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
++        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
++        <script src="lib/easing/easing.min.js"></script>
++        <script src="lib/waypoints/waypoints.min.js"></script>
++        <script src="lib/counterup/counterup.min.js"></script>
++        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ 
+-<!-- Template Javascript -->
+-<script src="js/main.js"></script>
++        <!-- Template Javascript -->
++        <script src="js/main.js"></script>
+ 
+-<!-- Core JS -->
+-<!-- build:js assets/vendor/js/core.js -->
++        <!-- Core JS -->
++        <!-- build:js assets/vendor/js/core.js -->
+ 
+-<script src="assets/vendor/libs/jquery/jquery.js"></script>
+-<script src="assets/vendor/libs/popper/popper.js"></script>
+-<script src="assets/vendor/js/bootstrap.js"></script>
+-<script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+-<script src="assets/vendor/js/menu.js"></script>
++        <script src="assets/vendor/libs/jquery/jquery.js"></script>
++        <script src="assets/vendor/libs/popper/popper.js"></script>
++        <script src="assets/vendor/js/bootstrap.js"></script>
++        <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
++        <script src="assets/vendor/js/menu.js"></script>
+ 
+-<!-- endbuild -->
++        <!-- endbuild -->
+ 
+-<!-- Vendors JS -->
++        <!-- Vendors JS -->
+ 
+-<!-- Main JS -->
+-<script src="assets/js/main.js"></script>
++        <!-- Main JS -->
++        <script src="assets/js/main.js"></script>
+ 
+-<!-- Page JS -->
++        <!-- Page JS -->
+ 
+-<!-- Place this tag in your head or just before your close body tag. -->
+-<script async defer src="https://buttons.github.io/buttons.js"></script>
+-</body>
++        <!-- Place this tag in your head or just before your close body tag. -->
++        <script async defer src="https://buttons.github.io/buttons.js"></script>
++    </body>
+ </html>
+Index: web/js/header.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>(function () {\r\n    let href = window.location.href;\r\n    var elementId;\r\n    if (href.includes('/home') || href === 'http://localhost:8080/se1808-g6/') {\r\n        elementId = 'nav-item-home';\r\n    } else {\r\n        if (href.includes('/flashcard')) {\r\n            elementId = 'nav-item-flashcard';\r\n        }\r\n        else{\r\n            if (href.includes('/course')) {\r\n            elementId = 'nav-item-course';\r\n        }\r\n        }\r\n    }\r\n    document.getElementById(elementId).className = \"nav-item nav-link text-primary\";\r\n}\r\n)();
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/js/header.js b/web/js/header.js
+--- a/web/js/header.js	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/js/header.js	(date 1721271841662)
+@@ -3,16 +3,15 @@
+     var elementId;
+     if (href.includes('/home') || href === 'http://localhost:8080/se1808-g6/') {
+         elementId = 'nav-item-home';
+-    } else {
+-        if (href.includes('/flashcard')) {
+-            elementId = 'nav-item-flashcard';
+-        }
+-        else{
+-            if (href.includes('/course')) {
+-            elementId = 'nav-item-course';
+-        }
+-        }
++    } else if (href.includes('/flashcard')) {
++        elementId = 'nav-item-flashcard';
++    } else if (href.includes('/contact')) {
++        elementId = 'nav-item-contact';
++    } else if (href.includes('/course')) {
++        elementId = 'nav-item-classes';
+     }
++
++
+     document.getElementById(elementId).className = "nav-item nav-link text-primary";
+ }
+ )();
+\ No newline at end of file
+Index: src/java/controller/UserServlet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package controller;\r\n\r\nimport common.AvatarHandler;\r\nimport common.EmailValidator;\r\nimport common.PasswordGenerator;\r\nimport dal.UserDAO;\r\nimport java.io.IOException;\r\nimport java.io.PrintWriter;\r\nimport jakarta.servlet.ServletException;\r\nimport jakarta.servlet.annotation.MultipartConfig;\r\nimport jakarta.servlet.annotation.WebServlet;\r\nimport jakarta.servlet.http.HttpServlet;\r\nimport jakarta.servlet.http.HttpServletRequest;\r\nimport jakarta.servlet.http.HttpServletResponse;\r\nimport jakarta.servlet.http.HttpSession;\r\nimport jakarta.servlet.http.Part;\r\nimport java.sql.SQLException;\r\nimport java.util.ArrayList;\r\nimport java.util.Collections;\r\nimport mail.SendMail;\r\nimport model.user.*;\r\n\r\n@MultipartConfig\r\n@WebServlet(name = \"UserServlet\", urlPatterns = {\"/user\", \"/user/update\", \"/user/details\", \"/user/new\"})\r\npublic class UserServlet extends HttpServlet {\r\n\r\n    protected void processRequest(HttpServletRequest request, HttpServletResponse response)\r\n            throws ServletException, IOException {\r\n        response.setContentType(\"text/html;charset=UTF-8\");\r\n        try (PrintWriter out = response.getWriter()) {\r\n            /* TODO output your page here. You may use following sample code. */\r\n            out.println(\"<!DOCTYPE html>\");\r\n            out.println(\"<html>\");\r\n            out.println(\"<head>\");\r\n            out.println(\"<title>Servlet UserServlet</title>\");\r\n            out.println(\"</head>\");\r\n            out.println(\"<body>\");\r\n            out.println(\"<h1>Servlet UserServlet at \" + request.getContextPath() + \"</h1>\");\r\n            out.println(\"</body>\");\r\n            out.println(\"</html>\");\r\n        }\r\n    }\r\n\r\n    UserDAO userDAO = new UserDAO();\r\n    AvatarHandler avatarHandler = new AvatarHandler();\r\n    private final int rowPerPage = 6;\r\n\r\n    private String getWorkingDir() {\r\n        String directory = getServletContext().getRealPath(\"\") + \"\";\r\n        return directory.replace(\"\\\\build\\\\web\\\\\", \"\\\\web\\\\\");\r\n    }\r\n\r\n    void refreshSession(HttpSession session, User user) {\r\n        session.setAttribute(\"user\", user);\r\n    }\r\n\r\n    @Override\r\n    protected void doGet(HttpServletRequest request, HttpServletResponse response)\r\n            throws ServletException, IOException {\r\n        doPost(request, response);\r\n\r\n    }\r\n\r\n    @Override\r\n    protected void doPost(HttpServletRequest request, HttpServletResponse response)\r\n            throws ServletException, IOException {\r\n        HttpSession session = request.getSession();\r\n        User user = (User) session.getAttribute(\"user\");\r\n        if (user != null) {\r\n            refreshSession(session, userDAO.getUserById(user.getId()));\r\n        }\r\n        /*HttpSession session = request.getSession();\r\n        User user = (User) session.getAttribute(\"user\");\r\n        if (user == null) {\r\n            response.sendRedirect(\"login.jsp\");\r\n        } else if (user.getRole() != 0) {\r\n            response.sendRedirect(\"home\");\r\n        } else {\r\n            refreshSession(request);*/\r\n        String action = request.getServletPath();\r\n        switch (action) {\r\n            case \"/user\":\r\n                viewUserList(request, response);\r\n                break;\r\n            case \"/user/update\":\r\n                updateUser(request, response);\r\n                break;\r\n            case \"/user/details\":\r\n                viewUserDetails(request, response);\r\n                break;\r\n            case \"/user/new\":\r\n                newUser(request, response);\r\n                break;\r\n        }\r\n\r\n    }\r\n\r\n    private ArrayList<String> allSortOptions() {\r\n        ArrayList<String> list = new ArrayList<>();\r\n        list.add(\"Name\");\r\n        list.add(\"Email\");\r\n        list.add(\"Role\");\r\n        list.add(\"Status\");\r\n        return list;\r\n    }\r\n\r\n    private ArrayList<User> getUsersMatchRole(int roleId, ArrayList<User> list) {\r\n        ArrayList<User> ret = new ArrayList<>();\r\n        for (User user : list) {\r\n            if (user.getRole() == roleId) {\r\n                ret.add(user);\r\n            }\r\n        }\r\n        return ret;\r\n    }\r\n\r\n    private ArrayList<User> getUsersContainKeyWord(String keyWord, ArrayList<User> list) {\r\n        ArrayList<User> ret = new ArrayList<>();\r\n        for (User user : list) {\r\n            if (user.getName().contains(keyWord) || user.getEmail().contains(keyWord)) {\r\n                ret.add(user);\r\n            }\r\n        }\r\n        return ret;\r\n    }\r\n\r\n    private int getNoOfPages(ArrayList<User> list) {\r\n        int length = list.size();\r\n        if (length == 0) {\r\n            return 1;\r\n        }\r\n        int noOfPages = length / rowPerPage;\r\n        if (length % rowPerPage == 0) {\r\n            return noOfPages;\r\n        }\r\n        return noOfPages + 1;\r\n    }\r\n\r\n    private int getPage(HttpServletRequest request, int noOfPages) {\r\n        String cur = request.getParameter(\"currentPage\");\r\n        if ((cur == null) || (cur.isEmpty())) {\r\n            return 1;\r\n        }\r\n\r\n        int currentPage = Integer.parseInt(cur);\r\n        switch (request.getParameter(\"pageAction\")) {\r\n            case \"firstPage\":\r\n                return 1;\r\n            case \"prevPage\": {\r\n                currentPage--;\r\n                if (currentPage < 1) {\r\n                    return 1;\r\n                } else {\r\n                    return currentPage;\r\n                }\r\n            }\r\n            case \"nextPage\": {\r\n                currentPage++;\r\n                if (currentPage > noOfPages) {\r\n                    return noOfPages;\r\n                } else {\r\n                    return currentPage;\r\n                }\r\n            }\r\n            case \"lastPage\":\r\n                return noOfPages;\r\n        }\r\n\r\n        String newpage = request.getParameter(\"newPage\");\r\n        if ((newpage != null) && (!newpage.isEmpty())) {\r\n            int newPage = Integer.parseInt(newpage);\r\n            return newPage;\r\n        }\r\n        return currentPage;\r\n\r\n    }\r\n\r\n    private int getAdminIndex(ArrayList<Role> roleList) {\r\n        int index = 0;\r\n        for (Role role : roleList) {\r\n            if (role.getName().equals(\"Admin\")) {\r\n                return index;\r\n            }\r\n            index++;\r\n        }\r\n        return -1;\r\n    }\r\n\r\n    private ArrayList<Role> getRoleList() {\r\n        ArrayList<Role> roleList = userDAO.getAllRoles();\r\n        int index = getAdminIndex(roleList);\r\n        if (index != -1) {\r\n            roleList.remove(getAdminIndex(roleList));\r\n        }\r\n        return roleList;\r\n    }\r\n\r\n    private ArrayList<User> getAllUsersOfPage(int page, ArrayList<User> list) {\r\n        ArrayList<User> ret = new ArrayList<>();\r\n        int start = rowPerPage * (page - 1) + 1;\r\n        int end = rowPerPage * page;\r\n        if (start < 1) {\r\n            start = 1;\r\n        }\r\n        if (end > list.size()) {\r\n            end = list.size();\r\n        }\r\n\r\n        for (int i = start - 1; i < end; i++) {\r\n            ret.add(list.get(i));\r\n        }\r\n        return ret;\r\n    }\r\n\r\n    private void viewUserList(HttpServletRequest request, HttpServletResponse response)\r\n            throws ServletException, IOException {\r\n        ArrayList<User> list = userDAO.getAllUsers();\r\n\r\n        String rid = request.getParameter(\"roleId\");\r\n        if (rid != null && !rid.isEmpty()) {\r\n            int roleId = Integer.parseInt(rid);\r\n            request.setAttribute(\"roleId\", roleId);\r\n            if (roleId != 0) {\r\n                list = getUsersMatchRole(roleId, list);\r\n            }\r\n        }\r\n\r\n        String keyWord = request.getParameter(\"keyWord\");\r\n        if (keyWord != null && !keyWord.isEmpty()) {\r\n            list = getUsersContainKeyWord(keyWord, list);\r\n        }\r\n\r\n        String sortBy = request.getParameter(\"sortBy\");\r\n        if (sortBy != null && !sortBy.isEmpty()) {\r\n            switch (sortBy) {\r\n                case \"Name\":\r\n                    Collections.sort(list, new User.SortByName());\r\n                    break;\r\n                case \"Email\":\r\n                    Collections.sort(list, new User.SortByEmail());\r\n                    break;\r\n                case \"Role\":\r\n                    Collections.sort(list, new User.SortByRole());\r\n                    break;\r\n                case \"Status\":\r\n                    Collections.sort(list, new User.SortByStatus());\r\n                    break;\r\n            }\r\n        }\r\n\r\n        int noOfPages = getNoOfPages(list);\r\n        int currentPage = getPage(request, noOfPages);\r\n        list = getAllUsersOfPage(currentPage, list);\r\n\r\n        request.setAttribute(\"list\", list);\r\n        request.setAttribute(\"roleList\", getRoleList());\r\n        request.setAttribute(\"keyWord\", keyWord);\r\n        request.setAttribute(\"sortOptions\", allSortOptions());\r\n        request.setAttribute(\"sortBy\", sortBy);\r\n        request.setAttribute(\"currentPage\", currentPage);\r\n        request.setAttribute(\"noOfPages\", noOfPages);\r\n        request.getRequestDispatcher(\"/WEB-INF/views/user/userlist.jsp\").forward(request, response);\r\n    }\r\n\r\n    private void changeUserStatus(HttpServletRequest request, HttpServletResponse response)\r\n            throws IOException {\r\n        int userId = Integer.parseInt(request.getParameter(\"userId\"));\r\n        System.out.println(userId);\r\n        userDAO.changeUserStatus(userId);\r\n        response.sendRedirect(\"../user\");\r\n    }\r\n\r\n    private void saveChanges(HttpServletRequest request, HttpServletResponse response)\r\n            throws ServletException, IOException {\r\n        boolean successful = true;\r\n        int userId = Integer.parseInt(request.getParameter(\"userId\"));\r\n        User user = userDAO.getUserById(userId);\r\n        String name = request.getParameter(\"name\");\r\n        if (name == null || name.isEmpty()) {\r\n            request.setAttribute(\"nameErr\", \"Name is blank!\");\r\n            successful = false;\r\n        } else {\r\n            if (name.length() > 50) {\r\n                successful = false;\r\n                request.setAttribute(\"nameErr\", \"Name can not exceed 50 characters!\");\r\n            }\r\n        }\r\n        Part filePart = request.getPart(\"newAvatar\");\r\n        if (filePart != null && filePart.getSize() != 0) {\r\n            String workingDir = getWorkingDir();\r\n            String workingFolder = \"assets\\\\img\";\r\n            try {\r\n                avatarHandler.changeAvatar(userId, workingFolder, workingDir, filePart);\r\n            } catch (SQLException | IOException e) {\r\n                successful = false;\r\n                request.setAttribute(\"avtErr\", \"Upload image failed!\");\r\n            }\r\n        }\r\n\r\n        user.setName(name);\r\n        user.setRole(Integer.parseInt(request.getParameter(\"roleId\")));\r\n        if (successful) {\r\n            try {\r\n                userDAO.updateUser(user);\r\n            } catch (SQLException e) {\r\n                request.setAttribute(\"updateErr\", \"Update failed! Please try again later!\");\r\n                successful = false;\r\n            }\r\n        }\r\n\r\n        if (successful) {\r\n            response.sendRedirect(\"../user\");\r\n        } else {\r\n            request.setAttribute(\"user\", user);\r\n            request.setAttribute(\"roleList\", getRoleList());\r\n            request.getRequestDispatcher(\"/WEB-INF/views/user/userdetails.jsp\").forward(request, response);\r\n        }\r\n    }\r\n\r\n    private void updateUser(HttpServletRequest request, HttpServletResponse response)\r\n            throws IOException, ServletException {\r\n        switch (request.getParameter(\"action\")) {\r\n            case \"changeStatus\":\r\n                changeUserStatus(request, response);\r\n                break;\r\n            case \"saveChanges\":\r\n                saveChanges(request, response);\r\n                break;\r\n        }\r\n    }\r\n\r\n    private void viewUserDetails(HttpServletRequest request, HttpServletResponse response)\r\n            throws IOException, ServletException {\r\n        int userId = Integer.parseInt(request.getParameter(\"userId\"));\r\n        User user = userDAO.getUserById(userId);\r\n\r\n        request.setAttribute(\"user\", user);\r\n        request.setAttribute(\"roleList\", getRoleList());\r\n        request.getRequestDispatcher(\"/WEB-INF/views/user/userdetails.jsp\").forward(request, response);\r\n    }\r\n\r\n    private void goToPage(HttpServletRequest request, HttpServletResponse response)\r\n            throws IOException, ServletException {\r\n        request.setAttribute(\"roleList\", getRoleList());\r\n        request.getRequestDispatcher(\"/WEB-INF/views/user/newuser.jsp\").forward(request, response);\r\n    }\r\n\r\n    private void addUser(HttpServletRequest request, HttpServletResponse response)\r\n            throws IOException, ServletException {\r\n        boolean successful = true;\r\n        User user = new User();\r\n        String name = request.getParameter(\"name\");\r\n        if (name == null || name.isEmpty()) {\r\n            request.setAttribute(\"nameErr\", \"Name is blank!\");\r\n            successful = false;\r\n        } else {\r\n            if (name.length() > 50) {\r\n                successful = false;\r\n                request.setAttribute(\"nameErr\", \"Name can not exceed 50 characters!\");\r\n            }\r\n        }\r\n        user.setName(name);\r\n        user.setRole(Integer.parseInt(request.getParameter(\"roleId\")));\r\n        String avt = request.getParameter(\"avt\");\r\n        Part filePart = request.getPart(\"avatar\");\r\n        if (filePart == null || filePart.getSize() == 0) {\r\n            user.setAvatar(avt);\r\n        } else {\r\n            String workingDir = getWorkingDir();\r\n            String workingFolder = \"assets\\\\img\";\r\n            user.setAvatar(avatarHandler.uploadAvatar(workingFolder, workingDir, filePart, avt));\r\n        }\r\n        String email = request.getParameter(\"email\");\r\n        user.setEmail(email);\r\n        if (email == null || email.isEmpty()) {\r\n            successful = false;\r\n            request.setAttribute(\"emailErr\", \"Email is blank!\");\r\n        } else {\r\n            if (email.length() > 35) {\r\n                successful = false;\r\n                request.setAttribute(\"emailErr\", \"Email can not exceed 35 characters!\");\r\n            } else {\r\n                if (!EmailValidator.validate(email)) {\r\n                    successful = false;\r\n                    request.setAttribute(\"emailErr\", \"Please enter a valid email!\");\r\n                } else {\r\n                    if (userDAO.checkEmailExist(email)) {\r\n                        successful = false;\r\n                        request.setAttribute(\"emailErr\", \"Email has already been registered, please head to login!\");\r\n                    } else {\r\n                        try {\r\n                            user.setStatus(2);\r\n                            String password = PasswordGenerator.generateRandomPassword();\r\n                            userDAO.addUser(user, password);\r\n                            String receiver = user.getEmail();\r\n                            String subject = \"Password for Knowledge Revising System\";\r\n                            String content = \"Hi, you have been invited to join our Knowledge Revising System website \\n\\n\";\r\n                            content += \"Please login by your email with password \" + password + \" to access our system.\";\r\n                            SendMail.sendMail(receiver, subject, content);\r\n                        } catch (SQLException e) {\r\n                            successful = false;\r\n                            request.setAttribute(\"err\", \"Failed to add user, please try again later!\");\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        if (successful) {\r\n            response.sendRedirect(\"../user\");\r\n        } else {\r\n            request.setAttribute(\"user\", user);\r\n            request.setAttribute(\"roleList\", getRoleList());\r\n            request.getRequestDispatcher(\"/WEB-INF/views/user/newuser.jsp\").forward(request, response);\r\n        }\r\n    }\r\n\r\n    private void newUser(HttpServletRequest request, HttpServletResponse response)\r\n            throws IOException, ServletException {\r\n        switch (request.getParameter(\"action\")) {\r\n            case \"goToPage\":\r\n                goToPage(request, response);\r\n                break;\r\n            case \"addUser\":\r\n                addUser(request, response);\r\n                break;\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public String getServletInfo() {\r\n        return \"Short description\";\r\n    }// </editor-fold>\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/java/controller/UserServlet.java b/src/java/controller/UserServlet.java
+--- a/src/java/controller/UserServlet.java	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/src/java/controller/UserServlet.java	(date 1721271834972)
+@@ -364,7 +364,11 @@
+         String avt = request.getParameter("avt");
+         Part filePart = request.getPart("avatar");
+         if (filePart == null || filePart.getSize() == 0) {
+-            user.setAvatar(avt);
++            if (avt == null || avt.isEmpty()) {
++                user.setAvatar("assets/img/default_avt.jpg");
++            } else {
++                user.setAvatar(avt);
++            }
+         } else {
+             String workingDir = getWorkingDir();
+             String workingFolder = "assets\\img";
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ArtifactsWorkspaceSettings\">\r\n    <artifacts-to-build>\r\n      <artifact name=\"se1808-g6:war exploded\" />\r\n    </artifacts-to-build>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"54eeaf7d-60e8-440e-9fc5-f872d814e85c\" name=\"Changes\" comment=\"util\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/nbproject/private/private.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/nbproject/private/private.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/web/flashcard-test.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/web/flashcard-test.jsp\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/web/header1.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/web/header1.jsp\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"Jsp File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FormatOnSaveOptions\">\r\n    <option name=\"myRunOnSave\" value=\"true\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"LogFilters\">\r\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\r\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\r\n    <option name=\"FILTER_INFO\" value=\"true\" />\r\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\r\n    <option name=\"CUSTOM_FILTER\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2hyMeCQqlnuVhNy14QIKDXJu2m5\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.CourseDAO.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.CourseListServlet.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.CourseServlet.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;Tomcat Server.Tomcat 10.1.20.executor&quot;: &quot;Run&quot;,\r\n    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,\r\n    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/FER slides/LabAdmin&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Tomcat Server.Tomcat 10.1.20\">\r\n    <configuration name=\"CourseDAO\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"dal.CourseDAO\" />\r\n      <module name=\"se1808-g6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"dal.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CourseServlet\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"controller.course.CourseServlet\" />\r\n      <module name=\"se1808-g6\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"controller.course.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Tomcat 10.1.20\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 10.1.20\" ALTERNATIVE_JRE_ENABLED=\"false\" nameIsGenerated=\"true\">\r\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\r\n      <deployment>\r\n        <artifact name=\"se1808-g6:war exploded\">\r\n          <settings>\r\n            <option name=\"CONTEXT_PATH\" value=\"/se1808_g6\" />\r\n          </settings>\r\n        </artifact>\r\n      </deployment>\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"d0fc3d2c-dfe5-4d48-a081-cbfaf9e73bfd\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"51617\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Profile\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"BuildArtifacts\" enabled=\"true\">\r\n          <artifact name=\"se1808-g6:war exploded\" />\r\n        </option>\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Application.CourseDAO\" />\r\n      <item itemvalue=\"Application.CourseServlet\" />\r\n      <item itemvalue=\"Tomcat Server.Tomcat 10.1.20\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.CourseServlet\" />\r\n        <item itemvalue=\"Application.CourseDAO\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"54eeaf7d-60e8-440e-9fc5-f872d814e85c\" name=\"Changes\" comment=\"\" />\r\n      <created>1718561957247</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1718561957247</updated>\r\n      <workItem from=\"1718561958577\" duration=\"150000\" />\r\n      <workItem from=\"1718562126015\" duration=\"973000\" />\r\n      <workItem from=\"1718581029058\" duration=\"1620000\" />\r\n      <workItem from=\"1718690261434\" duration=\"1049000\" />\r\n      <workItem from=\"1718699075958\" duration=\"30000\" />\r\n      <workItem from=\"1718846161664\" duration=\"760000\" />\r\n      <workItem from=\"1718863805865\" duration=\"18000\" />\r\n      <workItem from=\"1719145114346\" duration=\"584000\" />\r\n      <workItem from=\"1719146025525\" duration=\"16723000\" />\r\n      <workItem from=\"1719191975454\" duration=\"5213000\" />\r\n      <workItem from=\"1719198703042\" duration=\"150000\" />\r\n      <workItem from=\"1719458275857\" duration=\"4242000\" />\r\n      <workItem from=\"1719483335214\" duration=\"10000\" />\r\n      <workItem from=\"1719556718377\" duration=\"804000\" />\r\n      <workItem from=\"1719578081984\" duration=\"6876000\" />\r\n      <workItem from=\"1719715666129\" duration=\"3943000\" />\r\n      <workItem from=\"1720920835001\" duration=\"11660000\" />\r\n      <workItem from=\"1720961174725\" duration=\"10595000\" />\r\n      <workItem from=\"1720992440787\" duration=\"1965000\" />\r\n      <workItem from=\"1721003426028\" duration=\"6037000\" />\r\n      <workItem from=\"1721097278793\" duration=\"9649000\" />\r\n      <workItem from=\"1721144262609\" duration=\"11985000\" />\r\n      <workItem from=\"1721175833990\" duration=\"11458000\" />\r\n      <workItem from=\"1721195144098\" duration=\"1655000\" />\r\n      <workItem from=\"1721198701269\" duration=\"292000\" />\r\n      <workItem from=\"1721202831125\" duration=\"1187000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"util\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721156721128</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721156721128</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"util\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"util\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/.idea/workspace.xml	(date 1721266480753)
+@@ -11,9 +11,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="54eeaf7d-60e8-440e-9fc5-f872d814e85c" name="Changes" comment="util">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web/flashcard-test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/flashcard-test.jsp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web/header1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header1.jsp" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -257,6 +254,7 @@
+       <workItem from="1721195144098" duration="1655000" />
+       <workItem from="1721198701269" duration="292000" />
+       <workItem from="1721202831125" duration="1187000" />
++      <workItem from="1721252643319" duration="2248000" />
+     </task>
+     <task id="LOCAL-00001" summary="util">
+       <option name="closed" value="true" />
+@@ -266,7 +264,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1721156721128</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="util">
++      <option name="closed" value="true" />
++      <created>1721252702140</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1721252702140</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: web/signup.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ page import=\"static model.google.GoogleConstants.GOOGLE_LOGIN_URL\" %>\r\n<!DOCTYPE html>\r\n<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\" pageEncoding=\"UTF-8\" %>\r\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\r\n<html>\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n    <title>Sign Up</title>\r\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css\">\r\n    <link rel=\"stylesheet\"\r\n          href=\"https://unpkg.com/bs-brain@2.0.4/components/registrations/registration-7/assets/css/registration-7.css\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<jsp:include page=\"header1.jsp\"/>\r\n\r\n<!-- Registration 7 - Bootstrap Brain Component -->\r\n<section class=\"bg-light p-3 p-md-4 p-xl-5\">\r\n    <div class=\"container\">\r\n        <div class=\"row justify-content-center\">\r\n            <div class=\"col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5\">\r\n                <div class=\"card border border-light-subtle rounded-4\">\r\n                    <div class=\"card-body p-3 p-md-4 p-xl-5\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12\">\r\n                                <div class=\"mb-5\">\r\n                                    <div class=\"text-center mb-4\">\r\n                                        <a href=\"home\" class=\"navbar-brand ml-lg-3\">\r\n                                            <h1 class=\"m-0 text-uppercase text-primary\"><i\r\n                                                    class=\"fa fa-book-reader mr-3\"></i>KRS</h1>\r\n                                        </a>\r\n                                    </div>\r\n                                    <h2 class=\"h4 text-center\">Registration</h2>\r\n                                    <h3 class=\"fs-6 fw-normal text-secondary text-center m-0\">Enter your details to\r\n                                        register</h3>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <form action=\"signup\" method=\"post\">\r\n\r\n                            <div class=\"row gy-3 overflow-hidden\">\r\n                                <!-- Full Name field -->\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"text\" class=\"form-control\" name=\"fullName\" id=\"fullName\"\r\n                                               placeholder=\"Full Name\" required>\r\n                                        <label for=\"fullName\" class=\"form-label\">Full Name</label>\r\n                                    </div>\r\n                                </div>\r\n                                <!-- Email field -->\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\"\r\n                                               placeholder=\"name@example.com\" required>\r\n                                        <label for=\"email\" class=\"form-label\">Email</label>\r\n                                    </div>\r\n                                </div>\r\n                                <!-- Password field -->\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\"\r\n                                               value=\"\" placeholder=\"Password\" required>\r\n                                        <label for=\"password\" class=\"form-label\">Password</label>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"password\" class=\"form-control\" name=\"repassword\" id=\"repassword\"\r\n                                               placeholder=\"Confirm Password\" required>\r\n                                        <label for=\"password\" class=\"form-label\">Confirm Password</label>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"d-grid\">\r\n                                        <span class=\"text-danger font-italic\">${sessionScope.message}</span>\r\n                                        <button class=\"btn bsb-btn-xl btn-primary\" type=\"submit\">Sign up</button>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </form>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12\">\r\n                                <hr class=\"mt-5 mb-4 border-secondary-subtle\">\r\n                                <p class=\"m-0 text-secondary text-center\">Already have an account? <a href=\"login.jsp\"\r\n                                                                                                      class=\"link-primary text-decoration-none\">Sign\r\n                                    in</a></p>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12 d-flex align-items-center justify-content-center\">\r\n                                <p class=\"mt-5 mb-5 mr-2\">Or continue with</p>\r\n                                <!-- Google sign-up button -->\r\n                                <a href=\"<%=GOOGLE_LOGIN_URL%>\" class=\"btn btn-lg btn-outline-danger p-3 lh-1\">\r\n                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" fill=\"currentColor\"\r\n                                         class=\"bi bi-google\" viewBox=\"0 0 16 16\">\r\n                                        <path d=\"M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z\"></path>\r\n                                    </svg>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n<jsp:include page=\"footer.jsp\"/>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/signup.jsp b/web/signup.jsp
+--- a/web/signup.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/signup.jsp	(date 1721271834985)
+@@ -28,7 +28,7 @@
+     <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+-<jsp:include page="header1.jsp"/>
++<jsp:include page="header.jsp"/>
+ 
+ <!-- Registration 7 - Bootstrap Brain Component -->
+ <section class="bg-light p-3 p-md-4 p-xl-5">
+Index: web/profile.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\" pageEncoding=\"UTF-8\" %>\r\n<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>\r\n<html>\r\n<head>\r\n    <title>User Profile</title>\r\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<jsp:include page=\"header1.jsp\"/>\r\n\r\n<c:if test=\"${sessionScope.user == null}\">\r\n    <c:redirect url=\"login.jsp\"/>\r\n</c:if>\r\n\r\n<section class=\"bg-light p-3 p-md-4 p-xl-5\">\r\n    <div class=\"container\">\r\n        <div class=\"row justify-content-center\">\r\n            <div class=\"col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5\">\r\n                <div class=\"card border border-light-subtle rounded-4\">\r\n                    <div class=\"card-body p-3 p-md-4 p-xl-5\">\r\n                        <div class=\"row\">\r\n                            <div class=\"text-center mb-4\">\r\n                                <a href=\"home\" class=\"navbar-brand ml-lg-3\">\r\n                                    <h1 class=\"m-0 text-uppercase text-primary\"><i class=\"fa fa-book-reader mr-3\"></i>KRS\r\n                                    </h1>\r\n                                </a>\r\n                            </div>\r\n                            <div class=\"col-12\">\r\n                                <div class=\"mb-5 text-center\">\r\n                                    <h2 class=\"h4\">User Profile</h2>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row gy-3\">\r\n                            <div class=\"col-12 text-center\">\r\n                                <c:set var=\"avatarPath\"\r\n                                       value=\"${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/assets/img/${sessionScope.user.avatar}\"/>\r\n                                <img src=\"${avatarPath}\" alt=\"User Avatar\" class=\"rounded-circle\" width=\"150\"\r\n                                     height=\"150\">\r\n                            </div>\r\n                            <div class=\"col-12\">\r\n                                <div class=\"form-floating mb-3\">\r\n                                    <input type=\"text\" class=\"form-control\" id=\"fullName\"\r\n                                           value=\"${sessionScope.user.name}\" readonly>\r\n                                    <label for=\"fullName\" class=\"form-label\">Full Name</label>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"col-12\">\r\n                                <div class=\"form-floating mb-3\">\r\n                                    <input type=\"email\" class=\"form-control\" id=\"email\"\r\n                                           value=\"${sessionScope.user.email}\" readonly>\r\n                                    <label for=\"email\" class=\"form-label\">Email</label>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"col-12\">\r\n                                <div class=\"form-floating mb-3\">\r\n                                    <input type=\"text\" class=\"form-control\" id=\"role\" readonly>\r\n                                    <script>\r\n                                        var sessionRoleValue = ${sessionScope.user.role};\r\n                                        var roleMapping = {\r\n                                            0: 'Admin',\r\n                                            1: 'Manager',\r\n                                            2: 'Teacher',\r\n                                            3: 'Student'\r\n                                        };\r\n                                        var roleText = roleMapping[sessionRoleValue] || 'Other';\r\n                                        document.getElementById('role').value = roleText;\r\n                                    </script>\r\n                                    <label for=\"role\" class=\"form-label\">Role</label>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row mt-4\">\r\n                            <div class=\"col-6 text-center\">\r\n                                <button class=\"btn btn-primary\"\r\n                                        onclick=\"window.location.href='${pageContext.request.contextPath}/home'\">Home\r\n                                </button>\r\n                            </div>\r\n                            <div class=\"col-6 text-center\">\r\n                                <button class=\"btn btn-primary\" onclick=\"window.location.href='reset-password.jsp'\">\r\n                                    Reset Password\r\n                                </button>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row mt-4\">\r\n                            <div class=\"col-12 text-center\">\r\n                                <button class=\"btn btn-danger\"\r\n                                        onclick=\"window.location.href='${pageContext.request.contextPath}/logout'\">Log\r\n                                    Out\r\n                                </button>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n<jsp:include page=\"footer.jsp\"/>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/profile.jsp b/web/profile.jsp
+--- a/web/profile.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/profile.jsp	(date 1721271834985)
+@@ -51,7 +51,7 @@
+                         <div class="row gy-3">
+                             <div class="col-12 text-center">
+                                 <c:set var="avatarPath"
+-                                       value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/assets/img/${sessionScope.user.avatar}"/>
++                                       value="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/${sessionScope.user.avatar}"/>
+                                 <img src="${avatarPath}" alt="User Avatar" class="rounded-circle" width="150"
+                                      height="150">
+                             </div>
+Index: web/WEB-INF/dashboard/dashboard.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/WEB-INF/dashboard/dashboard.jsp b/web/WEB-INF/dashboard/dashboard.jsp
+new file mode 100644
+--- /dev/null	(date 1721271834972)
++++ b/web/WEB-INF/dashboard/dashboard.jsp	(date 1721271834972)
+@@ -0,0 +1,306 @@
++<%@page isELIgnored="false" %>
++<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
++<%@page contentType="text/html" pageEncoding="UTF-8"%>
++<html
++    lang="en"
++    class="light-style layout-menu-fixed layout-compact"
++    dir="ltr"
++    data-theme="theme-default"
++    data-assets-path="assets/"
++    data-template="vertical-menu-template-free">
++    <head>
++        <meta charset="utf-8" />
++        <meta
++            name="viewport"
++            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
++
++        <title>Dashboard</title>
++
++        <meta name="description" content="" />
++
++        <!-- Favicon -->
++        <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
++
++        <!-- Fonts -->
++        <link rel="preconnect" href="https://fonts.googleapis.com" />
++        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++        <link
++            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
++            rel="stylesheet" />
++
++        <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
++
++        <!-- Core CSS -->
++        <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
++        <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
++        <link rel="stylesheet" href="assets/css/demo.css" />
++
++        <!-- Vendors CSS -->
++        <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
++        <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
++
++        <!-- Page CSS -->
++
++        <!-- Helpers -->
++        <script src="assets/vendor/js/helpers.js"></script>
++        <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
++        <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
++        <script src="assets/js/config.js"></script>
++    </head>
++
++    <body>
++        <input type="hidden" name="currentPageUri" value="${pageContext.request.requestURI}"/> 
++        <!-- Layout wrapper -->
++        <div class="layout-wrapper layout-content-navbar">
++            <div class="layout-container">
++                <!-- Menu -->
++
++                <jsp:include page="/WEB-INF/common/sider.jsp"/>
++                <!-- / Menu -->
++
++                <!-- Layout container -->
++                <div class="layout-page">
++
++                    <!-- Content wrapper -->
++                    <div class="content-wrapper">
++                        <!-- Content -->
++                        <jsp:include page="/WEB-INF/common/header.jsp"/>
++
++                        <div class="content-wrapper">
++                            <!-- Content -->
++
++                            <div class="container-xxl flex-grow-1 container-p-y">
++                                <div class="row">
++                                    <div class="col-lg-8 mb-4 order-0">
++                                        <div class="card">
++                                            <div class="d-flex align-items-end row">
++                                                <div class="col-sm-7">
++                                                    <div class="card-body">
++                                                        <h5 class="card-title text-primary">Welcome back! 🎉</h5>
++                                                        <p class="mb-4">
++                                                            You have done <span class="fw-medium">72%</span> more sales today. Check your new badge in
++                                                            your profile.
++                                                        </p>
++
++                                                        <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Badges</a>
++                                                    </div>
++                                                </div>
++                                                <div class="col-sm-5 text-center text-sm-left">
++                                                    <div class="card-body pb-0 px-0 px-md-4">
++                                                        <img
++                                                            src="assets/img/illustrations/man-with-laptop-light.png"
++                                                            height="140"
++                                                            alt="View Badge User"
++                                                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
++                                                            data-app-light-img="illustrations/man-with-laptop-light.png" />
++                                                    </div>
++                                                </div>
++                                            </div>
++                                        </div>
++                                    </div>
++                                    <div class="col-lg-4 col-md-4 order-1">
++                                        <div class="row">
++                                            <div class="col-lg-6 col-md-12 col-6 mb-4">
++                                                <div class="card">
++                                                    <div class="card-body">
++                                                        <div class="card-title d-flex align-items-start justify-content-between">
++                                                            <div class="avatar flex-shrink-0">
++                                                                <a href="${pageContext.request.contextPath}/user">
++                                                                    <span class="badge bg-label-primary p-2"><i class="bx bx-user text-primary"></i></span>
++                                                                </a>
++                                                            </div>
++                                                        </div>
++                                                        <span class="fw-medium d-block mb-1">Users</span>
++                                                        <h3 class="card-title mb-2">${requestScope.userList.size()}</h3>
++                                                        <c:if test="${requestScope.newUsersToday != 0}">
++                                                            <small class="text-success fw-medium">
++                                                                <i class="bx bx-up-arrow-alt"></i> ${requestScope.newUsersToday} new users today
++                                                            </small>
++                                                        </c:if>
++                                                        <c:if test="${requestScope.newUsersToday == 0}">
++                                                            <small class="text-dark fw-medium">
++                                                                No new users today
++                                                            </small>
++                                                        </c:if>
++                                                    </div>
++                                                </div>
++                                            </div>
++                                            <div class="col-lg-6 col-md-12 col-6 mb-4">
++                                                <div class="card">
++                                                    <div class="card-body">
++                                                        <div class="card-title d-flex align-items-start justify-content-between">
++                                                            <div class="avatar flex-shrink-0">
++                                                                <a href="${pageContext.request.contextPath}/subjectlist">
++                                                                    <span class="badge bg-label-success p-2"><i class="bx bx-book-open text-success"></i></span>
++                                                                </a>
++                                                            </div>
++                                                        </div>
++                                                        <span>Subjects</span>
++                                                        <h3 class="card-title text-nowrap mb-1">${requestScope.subjectList.size()}</h3>
++                                                        <small class="text-success fw-medium">------</small>
++                                                    </div>
++                                                </div>
++                                            </div>
++                                        </div>
++                                    </div>
++                                    <!-- Total Revenue -->
++                                    <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
++                                        <div class="card">
++                                            <div class="row row-bordered g-0">
++                                                <div class="col-md-8">
++                                                    <h5 class="card-header m-0 me-2 pb-3">Total Revenue</h5>
++                                                    <div id="totalRevenueChart" class="px-2"></div>
++                                                </div>
++                                                <div class="col-md-4">
++                                                    <div class="card-body">
++                                                        <div class="text-center">
++                                                            <div class="dropdown">
++                                                                <button
++                                                                    class="btn btn-sm btn-outline-primary dropdown-toggle"
++                                                                    type="button"
++                                                                    id="growthReportId"
++                                                                    data-bs-toggle="dropdown"
++                                                                    aria-haspopup="true"
++                                                                    aria-expanded="false">
++                                                                    2022
++                                                                </button>
++                                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
++                                                                    <a class="dropdown-item" href="javascript:void(0);">2021</a>
++                                                                    <a class="dropdown-item" href="javascript:void(0);">2020</a>
++                                                                    <a class="dropdown-item" href="javascript:void(0);">2019</a>
++                                                                </div>
++                                                            </div>
++                                                        </div>
++                                                    </div>
++                                                    <div id="growthChart"></div>
++                                                    <div class="text-center fw-medium pt-3 mb-2">62% Company Growth</div>
++
++                                                    <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
++                                                        <div class="d-flex">
++                                                            <div class="me-2">
++                                                                <span class="badge bg-label-primary p-2"><i class="bx bx-dollar text-primary"></i></span>
++                                                            </div>
++                                                            <div class="d-flex flex-column">
++                                                                <small>2022</small>
++                                                                <h6 class="mb-0">$32.5k</h6>
++                                                            </div>
++                                                        </div>
++                                                        <div class="d-flex">
++                                                            <div class="me-2">
++                                                                <span class="badge bg-label-info p-2"><i class="bx bx-wallet text-info"></i></span>
++                                                            </div>
++                                                            <div class="d-flex flex-column">
++                                                                <small>2021</small>
++                                                                <h6 class="mb-0">$41.2k</h6>
++                                                            </div>
++                                                        </div>
++                                                    </div>
++                                                </div>
++                                            </div>
++                                        </div>
++                                    </div>
++                                    <!--/ Total Revenue -->
++                                    <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
++                                        <div class="row">
++                                            <div class="col-6 mb-4">
++                                                <div class="card">
++                                                    <div class="card-body">
++                                                        <div class="card-title d-flex align-items-start justify-content-between">
++                                                            <div class="avatar flex-shrink-0">
++                                                                <a href="${pageContext.request.contextPath}/classlist">
++                                                                    <span class="badge bg-label-danger p-2"><i class="bx bx-group text-danger"></i></span>
++                                                                </a>
++                                                            </div>
++                                                        </div>
++                                                        <span class="d-block mb-1">Class</span>
++                                                        <h3 class="card-title text-nowrap mb-2">${requestScope.classList.size()}</h3>
++                                                        <small class="text-danger fw-medium">-----</small>
++                                                    </div>
++                                                </div>
++                                            </div>
++                                            <div class="col-6 mb-4">
++                                                <div class="card">
++                                                    <div class="card-body">
++                                                        <div class="card-title d-flex align-items-start justify-content-between">
++                                                            <div class="avatar flex-shrink-0">
++                                                                <a href="${pageContext.request.contextPath}/question">
++                                                                    <span class="badge bg-label-primary p-2"><i class="bx bx-question-mark text-primary"></i></span>
++                                                                </a>
++                                                            </div>
++                                                        </div>
++                                                        <span class="fw-medium d-block mb-1">Question</span>
++                                                        <h3 class="card-title mb-2">${requestScope.questionList.size()}</h3>
++                                                        <small class="text-success fw-medium">-----</small>
++                                                    </div>
++                                                </div>
++                                            </div>
++                                            <!-- </div>
++                            <div class="row"> -->
++                                            <div class="col-12 mb-4">
++                                                <div class="card">
++                                                    <div class="card-body">
++                                                        <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
++                                                            <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
++                                                                <div class="card-title">
++                                                                    <h5 class="text-nowrap mb-2">Profile Report</h5>
++                                                                    <span class="badge bg-label-warning rounded-pill">Year 2021</span>
++                                                                </div>
++                                                                <div class="mt-sm-auto">
++                                                                    <small class="text-success text-nowrap fw-medium"
++                                                                           ><i class="bx bx-chevron-up"></i> 68.2%</small
++                                                                    >
++                                                                    <h3 class="mb-0">$84,686k</h3>
++                                                                </div>
++                                                            </div>
++                                                            <div id="profileReportChart"></div>
++                                                        </div>
++                                                    </div>
++                                                </div>
++                                            </div>
++                                        </div>
++                                    </div>
++                                </div>
++                            </div>
++                            <!-- / Content -->
++
++
++                            <div class="content-backdrop fade"></div>
++                        </div>
++
++                        <jsp:include page="/WEB-INF/common/footer.jsp"/>
++                    </div>
++                    <!-- Content wrapper -->
++
++
++                </div>
++                <!-- / Layout page -->
++            </div>
++        </div>
++        <!-- / Layout wrapper -->
++
++        <!-- build:js assets/vendor/js/core.js -->
++
++        <script src="assets/vendor/libs/jquery/jquery.js"></script>
++        <script src="assets/vendor/libs/popper/popper.js"></script>
++        <script src="assets/vendor/js/bootstrap.js"></script>
++        <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
++        <script src="assets/vendor/js/menu.js"></script>
++        <script src="js/sider.js"></script>
++
++        <!-- endbuild -->
++        
++        
++
++        <!-- Vendors JS -->
++        <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
++
++        <!-- Main JS -->
++        <script src="assets/js/main.js"></script>
++
++        <!-- Page JS -->
++        <script src="assets/js/dashboards-analytics.js"></script>
++
++        <!-- Place this tag in your head or just before your close body tag. -->
++        <script async defer src="https://buttons.github.io/buttons.js"></script>
++    </body>
++</html>
+Index: web/forgot-password.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ page import=\"static model.google.GoogleConstants.GOOGLE_LOGIN_URL\" %><%--\r\n  Created by IntelliJ IDEA.\r\n  User: PC\r\n  Date: 02-Jun-24\r\n  Time: 3:48 AM\r\n  To change this template use File | Settings | File Templates.\r\n--%>\r\n<%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %>\r\n<html>\r\n<head>\r\n    <title>Forgot password</title>\r\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css\">\r\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/bs-brain@2.0.4/components/logins/login-4/assets/css/login-4.css\">\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<jsp:include page=\"header1.jsp\"/>\r\n<section class=\"bg-light p-3 p-md-4 p-xl-5\">\r\n    <div class=\"container\">\r\n        <div class=\"row justify-content-center\">\r\n            <div class=\"col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5\">\r\n                <div class=\"card border border-light-subtle rounded-4\">\r\n                    <div class=\"card-body p-3 p-md-4 p-xl-5\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12\">\r\n                                <div class=\"mb-5\">\r\n                                    <div class=\"text-center mb-4\">\r\n                                        <a href=\"home\" class=\"navbar-brand ml-lg-3\">\r\n                                            <h1 class=\"m-0 text-uppercase text-primary\"><i\r\n                                                    class=\"fa fa-book-reader mr-3\"></i>KRS</h1>\r\n                                        </a>\r\n\r\n                                    </div>\r\n                                    <h4 class=\"text-center\">Forgot password</h4>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <form action=\"forgotpassword\" method=\"POST\">\r\n                            <div class=\"row gy-3 overflow-hidden\">\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\"\r\n                                               placeholder=\"name@example.com\" required>\r\n                                        <label for=\"email\" class=\"form-label\">Email</label>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"d-grid\">\r\n                                        <button class=\"btn bsb-btn-xl btn-primary\" type=\"submit\">Reset password</button>\r\n                                        <span style=\"color: red; font-style: italic;\">${message}</span>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </form>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12\">\r\n                                <hr class=\"mt-5 mb-4 border-secondary-subtle\">\r\n                                <div class=\"d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end\">\r\n                                    <a href=\"signup.jsp\" class=\"link-secondary text-decoration-none\">Create new\r\n                                        account</a>\r\n                                    <a href=\"login.jsp\" class=\"link-secondary text-decoration-none\">Login</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12 d-flex align-items-center justify-content-center\">\r\n                                <p class=\"mt-5 mb-5 mr-2\">Or continue with</p>\r\n                                <!-- Google sign-up button -->\r\n                                <a href=\"<%=GOOGLE_LOGIN_URL%>\" class=\"btn btn-lg btn-outline-danger p-3 lh-1\">\r\n                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" fill=\"currentColor\"\r\n                                         class=\"bi bi-google\" viewBox=\"0 0 16 16\">\r\n                                        <path d=\"M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z\"></path>\r\n                                    </svg>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n<jsp:include page=\"footer.jsp\"/>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/forgot-password.jsp b/web/forgot-password.jsp
+--- a/web/forgot-password.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/forgot-password.jsp	(date 1721271834985)
+@@ -29,7 +29,7 @@
+     <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+-<jsp:include page="header1.jsp"/>
++<jsp:include page="header.jsp"/>
+ <section class="bg-light p-3 p-md-4 p-xl-5">
+     <div class="container">
+         <div class="row justify-content-center">
+Index: web/login.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<%@ page import=\"static model.google.GoogleConstants.GOOGLE_LOGIN_URL\" %>\r\n<html>\r\n<head>\r\n    <title>Login</title>\r\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css\">\r\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/bs-brain@2.0.4/components/logins/login-4/assets/css/login-4.css\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n<jsp:include page=\"header1.jsp\"/>\r\n<section class=\"bg-light p-3 p-md-4 p-xl-5\">\r\n    <div class=\"container\">\r\n        <div class=\"row justify-content-center\">\r\n            <div class=\"col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5\">\r\n                <div class=\"card border border-light-subtle rounded-4\">\r\n                    <div class=\"card-body p-3 p-md-4 p-xl-5\">\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12\">\r\n                                <div class=\"mb-5\">\r\n                                    <div class=\"text-center mb-4\">\r\n                                        <a href=\"home\" class=\"navbar-brand ml-lg-3\">\r\n                                            <h1 class=\"m-0 text-uppercase text-primary\"><i\r\n                                                    class=\"fa fa-book-reader mr-3\"></i>KRS</h1>\r\n                                        </a>\r\n                                    </div>\r\n                                    <h4 class=\"text-center\">Welcome back, you've been missed!</h4>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n\r\n                        <form action=\"login\" method=\"POST\">\r\n                            <div class=\"row gy-3 overflow-hidden\">\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\"\r\n                                               placeholder=\"name@example.com\" required>\r\n                                        <label for=\"email\" class=\"form-label\">Email</label>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"form-floating mb-3\">\r\n                                        <input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\"\r\n                                               placeholder=\"Password\" required>\r\n                                        <label for=\"password\" class=\"form-label\">Password</label>\r\n                                    </div>\r\n                                </div>\r\n                                <%--                                <div class=\"col-12\">--%>\r\n                                <%--                                    <div class=\"form-check\">--%>\r\n                                <%--                                        <input class=\"form-check-input\" type=\"checkbox\" name=\"remember_me\"--%>\r\n                                <%--                                               id=\"remember_me\">--%>\r\n                                <%--                                        <label class=\"form-check-label text-secondary\" for=\"remember_me\">--%>\r\n                                <%--                                            Keep me logged in--%>\r\n                                <%--                                        </label>--%>\r\n                                <%--                                    </div>--%>\r\n                                <%--                                </div>--%>\r\n                                <div class=\"col-12\">\r\n                                    <div class=\"d-grid\">\r\n                                        <span class=\"text-danger font-italic\">${sessionScope.message}</span>\r\n                                        <button class=\"btn bsb-btn-xl btn-primary\" type=\"submit\">Log in now</button>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                        </form>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12\">\r\n                                <hr class=\"mt-5 mb-4 border-secondary-subtle\">\r\n                                <div class=\"d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end\">\r\n                                    <a href=\"signup.jsp\" class=\"link-secondary text-decoration-none\">Create new\r\n                                        account</a>\r\n                                    <a href=\"forgot-password.jsp\" class=\"link-secondary text-decoration-none\">Forgot\r\n                                        password</a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-12 d-flex align-items-center justify-content-center\">\r\n                                <p class=\"mt-5 mb-5 mr-2\">Or continue with</p>\r\n                                <!-- Google sign-up button -->\r\n                                <a href=\"<%=GOOGLE_LOGIN_URL%>\" class=\"btn btn-lg btn-outline-danger p-3 lh-1\">\r\n                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" fill=\"currentColor\"\r\n                                         class=\"bi bi-google\" viewBox=\"0 0 16 16\">\r\n                                        <path d=\"M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z\"></path>\r\n                                    </svg>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>\r\n<jsp:include page=\"footer.jsp\"/>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/login.jsp b/web/login.jsp
+--- a/web/login.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/login.jsp	(date 1721271834985)
+@@ -24,7 +24,7 @@
+     <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+-<jsp:include page="header1.jsp"/>
++<jsp:include page="header.jsp"/>
+ <section class="bg-light p-3 p-md-4 p-xl-5">
+     <div class="container">
+         <div class="row justify-content-center">
+Index: web/course.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\r\n<%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>Knowledge Revising System</title>\r\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\r\n    <meta content=\"Free HTML Templates\" name=\"keywords\">\r\n    <meta content=\"Free HTML Templates\" name=\"description\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Custom Styles for Sidebar -->\r\n    <style>\r\n        #sidebar {\r\n            height: 100%;\r\n            width: 0;\r\n            position: fixed;\r\n            z-index: 1;\r\n            top: 0;\r\n            left: 0;\r\n            background-color: #111;\r\n            overflow-x: hidden;\r\n            transition: 0.5s;\r\n            padding-top: 60px;\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n        }\r\n\r\n        #sidebar a {\r\n            padding: 8px 8px 8px 32px;\r\n            text-decoration: none;\r\n            font-size: 25px;\r\n            color: #818181;\r\n            display: block;\r\n            transition: 0.3s;\r\n        }\r\n\r\n        #sidebar a:hover {\r\n            color: #f1f1f1;\r\n        }\r\n\r\n        #sidebar .closebtn {\r\n            position: absolute;\r\n            top: 15px;\r\n            right: 25px;\r\n            font-size: 36px;\r\n            margin-left: 50px;\r\n        }\r\n\r\n        #sidebar h3 {\r\n            margin: 0;\r\n            padding: 10px;\r\n            color: white;\r\n        }\r\n\r\n        #main {\r\n            transition: margin-left .5s;\r\n            padding: 16px;\r\n        }\r\n\r\n        .openbtn {\r\n            font-size: 20px;\r\n            cursor: pointer;\r\n            background-color: #111;\r\n            color: white;\r\n            padding: 10px 15px;\r\n            border: none;\r\n        }\r\n\r\n        .openbtn:hover {\r\n            background-color: #444;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n<%--Header--%>\r\n<jsp:include page=\"header1.jsp\"/>\r\n\r\n<%-- Sidebar --%>\r\n<div id=\"sidebar\">\r\n    <a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"toggleNav()\">&times;</a>\r\n    <h3 class=\"text-center text-white\">My Classes</h3>\r\n    <c:forEach var=\"myCourse\" items=\"${sessionScope.myCourses}\">\r\n        <a href=\"${pageContext.request.contextPath}/my-course?classId=${myCourse.id}\">${myCourse.subjectCode}</a>\r\n    </c:forEach>\r\n</div>\r\n\r\n<div id=\"main\">\r\n    <button class=\"openbtn\" onclick=\"toggleNav()\">&#9776; My Classes</button>\r\n\r\n    <%--Content--%>\r\n    <div class=\"container mt-5\">\r\n        <h3 class=\"text-center\">\r\n            <span class=\"badge badge-pill badge-primary\">Courses</span>\r\n        </h3>\r\n        <div class=\"row mt-5\">\r\n            <c:forEach var=\"course\" items=\"${sessionScope.courses}\">\r\n                <div class=\"col-md-4 mb-4\">\r\n                    <div class=\"card h-100\">\r\n                        <div class=\"card-body\">\r\n                            <h5 class=\"card-title\">${course.className}</h5>\r\n                            <p class=\"card-text\"><strong>Subject Code:</strong> ${course.subjectCode}</p>\r\n                            <p class=\"card-text\"><strong>Subject Name:</strong> ${course.subjectName}</p>\r\n                            <p class=\"card-text\"><strong>Instructor:</strong> ${course.instructorName}</p>\r\n                                <%-- Display Student Count here --%>\r\n                            <p class=\"card-text text-success\"><strong>Students Enrolled:</strong>\r\n                                <c:forEach var=\"courseStudentCount\" items=\"${sessionScope.courseStudentCounts}\">\r\n                                    <c:if test=\"${courseStudentCount.courseId eq course.id}\">\r\n                                        ${courseStudentCount.studentCount}\r\n                                    </c:if>\r\n                                </c:forEach>\r\n                            </p>\r\n                            <a href=\"${pageContext.request.contextPath}/enroll?courseId=${course.id}\"\r\n                               class=\"btn btn-primary\">Enroll</a>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </c:forEach>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<!-- JavaScript Libraries -->\r\n<script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>\r\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js\"></script>\r\n<script src=\"lib/easing/easing.min.js\"></script>\r\n<script src=\"lib/waypoints/waypoints.min.js\"></script>\r\n<script src=\"lib/counterup/counterup.min.js\"></script>\r\n<script src=\"lib/owlcarousel/owl.carousel.min.js\"></script>\r\n<!-- Template Javascript -->\r\n<script src=\"js/main.js\"></script>\r\n<!-- Custom Script for Sidebar -->\r\n<script>\r\n    function toggleNav() {\r\n        const sidebar = document.getElementById(\"sidebar\");\r\n        const main = document.getElementById(\"main\");\r\n        if (sidebar.style.width === \"250px\") {\r\n            sidebar.style.width = \"0\";\r\n            main.style.marginLeft = \"0\";\r\n        } else {\r\n            sidebar.style.width = \"250px\";\r\n            main.style.marginLeft = \"250px\";\r\n        }\r\n    }\r\n</script>\r\n<%--Footer--%>\r\n<jsp:include page=\"footer.jsp\"/>\r\n</body>\r\n</html>\r\n<%--add searches--%>\r\n<%--add filters--%>\r\n<%--add sorting--%>\r\n<%--add pagination--%>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/course.jsp b/web/course.jsp
+--- a/web/course.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/course.jsp	(date 1721271834982)
+@@ -146,6 +146,7 @@
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
++<script src="js/header.js.js"></script>
+ <!-- Custom Script for Sidebar -->
+ <script>
+     function toggleNav() {
+Index: web/flashcard.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ taglib prefix=\"c\" uri=\"http://java.sun.com/jsp/jstl/core\" %>\r\n<%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>Knowledge Revising System - Flashcards</title>\r\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\r\n    <meta content=\"Free HTML Templates\" name=\"keywords\">\r\n    <meta content=\"Free HTML Templates\" name=\"description\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Bootstrap CSS -->\r\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Custom Styles for Flashcards -->\r\n    <style>\r\n        .flashcard-container {\r\n            display: flex;\r\n            flex-wrap: wrap;\r\n            justify-content: space-around;\r\n            margin-top: 30px;\r\n        }\r\n\r\n        .flashcard {\r\n            width: 300px;\r\n            margin-bottom: 20px;\r\n            padding: 20px;\r\n            background-color: #f8f9fa;\r\n            border: 1px solid #ced4da;\r\n            border-radius: 8px;\r\n            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);\r\n            transition: transform 0.3s ease;\r\n        }\r\n\r\n        .flashcard:hover {\r\n            transform: scale(1.05);\r\n        }\r\n\r\n        .flashcard h4 {\r\n            font-size: 1.5rem;\r\n            margin-bottom: 10px;\r\n        }\r\n\r\n        .flashcard p {\r\n            font-size: 1.1rem;\r\n            line-height: 1.6;\r\n            color: #6c757d;\r\n        }\r\n\r\n        .search-container {\r\n            display: flex;\r\n            justify-content: space-between;\r\n            margin-bottom: 20px;\r\n        }\r\n\r\n        .search-container input[type=text], .search-container select {\r\n            padding: 10px;\r\n            font-size: 17px;\r\n            border: 1px solid #ccc;\r\n            border-radius: 4px;\r\n            box-sizing: border-box;\r\n        }\r\n\r\n        .search-container input[type=text] {\r\n            flex: 1;\r\n            margin-right: 10px;\r\n        }\r\n\r\n        .search-container select {\r\n            width: 200px;\r\n        }\r\n\r\n        .add-flashcard-btn {\r\n            margin-left: 20px;\r\n        }\r\n\r\n        .pagination {\r\n            display: flex;\r\n            justify-content: center;\r\n            margin-top: 20px;\r\n        }\r\n\r\n        .pagination a {\r\n            color: black;\r\n            float: left;\r\n            padding: 8px 16px;\r\n            text-decoration: none;\r\n            transition: background-color .3s;\r\n            border: 1px solid #ddd;\r\n            margin: 0 4px;\r\n        }\r\n\r\n        .pagination a.active {\r\n            background-color: #4caf50;\r\n            color: white;\r\n            border: 1px solid #4caf50;\r\n        }\r\n\r\n        .pagination a:hover:not(.active) {\r\n            background-color: #ddd;\r\n        }\r\n    </style>\r\n    <script>\r\n        var currentPage = 1;\r\n        var itemsPerPage = 3;\r\n\r\n        function showPage(page) {\r\n            var cards = document.getElementsByClassName('flashcard');\r\n            var totalPages = Math.ceil(cards.length / itemsPerPage);\r\n\r\n            if (page < 1) page = 1;\r\n            if (page > totalPages) page = totalPages;\r\n\r\n            currentPage = page;\r\n\r\n            for (var i = 0; i < cards.length; i++) {\r\n                cards[i].style.display = \"none\";\r\n            }\r\n\r\n            for (var i = (page - 1) * itemsPerPage; i < (page * itemsPerPage) && i < cards.length; i++) {\r\n                cards[i].style.display = \"block\";\r\n            }\r\n\r\n            updatePagination(totalPages);\r\n        }\r\n\r\n        function updatePagination(totalPages) {\r\n            var pagination = document.getElementById('pagination');\r\n            pagination.innerHTML = '';\r\n\r\n            for (var i = 1; i <= totalPages; i++) {\r\n                var a = document.createElement('a');\r\n                a.href = 'javascript:void(0)';\r\n                a.innerHTML = i;\r\n                a.onclick = (function (page) {\r\n                    return function () {\r\n                        showPage(page);\r\n                    }\r\n                })(i);\r\n\r\n                if (i === currentPage) {\r\n                    a.className = 'active';\r\n                }\r\n\r\n                pagination.appendChild(a);\r\n            }\r\n        }\r\n\r\n        window.onload = function () {\r\n            showPage(currentPage);\r\n        }\r\n    </script>\r\n</head>\r\n<body>\r\n<%-- Header --%>\r\n<jsp:include page=\"header1.jsp\"/>\r\n\r\n<%-- Flashcard Content --%>\r\n<div class=\"container\">\r\n    <h1 class=\"text-center mt-5 mb-4\"><span class=\"badge badge-pill badge-primary\">Flashcard sets</span></h1>\r\n\r\n    <%-- Search and Filter Section --%>\r\n    <div class=\"search-container\">\r\n        <label for=\"searchInput\"></label><input type=\"text\" id=\"searchInput\" onkeyup=\"filterCards()\"\r\n                                                placeholder=\"Search for flashcard set...\">\r\n        <label for=\"subjectSelect\"></label><select id=\"subjectSelect\" onchange=\"filterBySubject()\">\r\n        <option value=\"\">All Subjects</option>\r\n        <c:forEach var=\"subject\" items=\"${sessionScope.subjects}\">\r\n            <option value=\"${subject.id}\">${subject.code}</option>\r\n        </c:forEach>\r\n    </select>\r\n        <a href=\"${pageContext.request.contextPath}/flashcard-add.jsp\" class=\"btn btn-success add-flashcard-btn\">Add\r\n            Flashcard</a>\r\n    </div>\r\n\r\n    <%-- Flashcard Display Section --%>\r\n    <div class=\"flashcard-container\">\r\n        <c:choose>\r\n            <c:when test=\"${empty sessionScope.flashcards}\">\r\n                <p>No flashcard sets available.</p>\r\n            </c:when>\r\n            <c:otherwise>\r\n                <c:forEach var=\"flashcard\" items=\"${sessionScope.flashcards}\" varStatus=\"loop\">\r\n                    <div class=\"flashcard\" data-subject-id=\"${flashcard.subjectId}\">\r\n                        <h4>${flashcard.name}</h4>\r\n                        <p><strong>Subject Code:</strong> ${flashcard.subjectCode}</p>\r\n                        <p><strong>Subject Name:</strong> ${flashcard.subjectName}</p>\r\n                        <p><strong>Number of Questions:</strong> ${flashcard.numQuestions}</p>\r\n                        <a href=\"${pageContext.request.contextPath}/flashcard-question?flashcardSetId=${flashcard.flashcardSetId}\"\r\n                           class=\"btn btn-primary\">View Questions</a>\r\n                    </div>\r\n                </c:forEach>\r\n            </c:otherwise>\r\n        </c:choose>\r\n    </div>\r\n\r\n    <%-- Pagination Section --%>\r\n    <div class=\"pagination\" id=\"pagination\"></div>\r\n</div>\r\n<!-- JavaScript Libraries -->\r\n<script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>\r\n<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js\"></script>\r\n<script src=\"lib/easing/easing.min.js\"></script>\r\n<script src=\"lib/waypoints/waypoints.min.js\"></script>\r\n<script src=\"lib/counterup/counterup.min.js\"></script>\r\n<script src=\"lib/owlcarousel/owl.carousel.min.js\"></script>\r\n<!-- JavaScript for Filtering -->\r\n<script>\r\n    function filterCards() {\r\n        var input, filter, cards, card, title, i, txtValue;\r\n        input = document.getElementById('searchInput');\r\n        filter = input.value.toUpperCase();\r\n        cards = document.getElementsByClassName('flashcard');\r\n\r\n        for (i = 0; i < cards.length; i++) {\r\n            card = cards[i];\r\n            title = card.getElementsByTagName(\"h4\")[0];\r\n            txtValue = title.textContent || title.innerText;\r\n            if (txtValue.toUpperCase().indexOf(filter) > -1) {\r\n                card.style.display = \"block\";\r\n            } else {\r\n                card.style.display = \"none\";\r\n            }\r\n        }\r\n    }\r\n\r\n    function filterBySubject() {\r\n        var selectBox = document.getElementById(\"subjectSelect\");\r\n        var selectedSubjectId = selectBox.value;\r\n        var cards = document.getElementsByClassName('flashcard');\r\n\r\n        for (var i = 0; i < cards.length; i++) {\r\n            var card = cards[i];\r\n            var subjectId = card.getAttribute(\"data-subject-id\");\r\n            if (selectedSubjectId === \"\") {\r\n                card.style.display = \"block\";\r\n            } else if (subjectId === selectedSubjectId) {\r\n                card.style.display = \"block\";\r\n            } else {\r\n                card.style.display = \"none\";\r\n            }\r\n        }\r\n    }\r\n</script>\r\n\r\n<%-- Footer --%>\r\n<jsp:include page=\"footer.jsp\"/>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/flashcard.jsp b/web/flashcard.jsp
+--- a/web/flashcard.jsp	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/web/flashcard.jsp	(date 1721271834985)
+@@ -220,6 +220,7 @@
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/counterup/counterup.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
++<script src="js/header.js"></script>
+ <!-- JavaScript for Filtering -->
+ <script>
+     function filterCards() {
+Index: nbproject/private/private.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project-private xmlns=\"http://www.netbeans.org/ns/project-private/1\">\r\n    <editor-bookmarks xmlns=\"http://www.netbeans.org/ns/editor-bookmarks/2\" lastBookmarkId=\"0\"/>\r\n    <open-files xmlns=\"http://www.netbeans.org/ns/projectui-open-files/2\">\r\n        <group>\r\n            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/flashcard/FlashcardTest.java</file>\r\n            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/flashcard/FlashcardMatch.java</file>\r\n            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/course/CourseNewAnnouncement.java</file>\r\n            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/flashcard/FlashcardLearn.java</file>\r\n            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/user/UserDashboardController.java</file>\r\n        </group>\r\n    </open-files>\r\n</project-private>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/nbproject/private/private.xml b/nbproject/private/private.xml
+--- a/nbproject/private/private.xml	(revision 47a7f45a54acc875f9bcb5576af105188bdffdd8)
++++ b/nbproject/private/private.xml	(date 1721271844684)
+@@ -3,11 +3,23 @@
+     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+         <group>
+-            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/flashcard/FlashcardTest.java</file>
+-            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/flashcard/FlashcardMatch.java</file>
+-            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/course/CourseNewAnnouncement.java</file>
+-            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/flashcard/FlashcardLearn.java</file>
+-            <file>file:/C:/Users/PC/Documents/SWP%20documents/se1808-g6/src/java/controller/user/UserDashboardController.java</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/src/java/controller/UserServlet.java</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/src/java/dal/UserDAO.java</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/dashboard/dashboard.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/account/enteractivationcode.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/home/home.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/views/user/newuser.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/js/sider.js</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/src/java/controller/LessonServlet.java</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/header.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/src/java/controller/login/LoginServlet.java</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/common/header.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/js/header.js</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/views/user/userlist.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/src/java/controller/login/ActivationServlet.java</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/views/user/userdetails.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/web/WEB-INF/views/lesson/lessondetails.jsp</file>
++            <file>file:/E:/Program%20Files/NetBeansProjects/se1808-g6/src/java/dal/SubjectDAO.java</file>
+         </group>
+     </open-files>
+ </project-private>
+Index: web/profile.jsp.rej
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/web/profile.jsp.rej b/web/profile.jsp.rej
+new file mode 100644
+--- /dev/null	(date 1721271834985)
++++ b/web/profile.jsp.rej	(date 1721271834985)
+@@ -0,0 +1,9 @@
++diff a/web/profile.jsp b/web/profile.jsp	(rejected hunks)
++@@ -23,6 +23,7 @@
++     <link href="css/style.css" rel="stylesheet">
++ </head>
++ <body>
+++<jsp:include page="/WEB-INF/common/header.jsp"/>
++ 
++ <c:if test="${sessionScope.user == null}">
++     <c:redirect url="login.jsp"/>
+diff --git a/web/setnewpassword.jsp b/web/WEB-INF/account/setnewpassword.jsp
+rename from web/setnewpassword.jsp
+rename to web/WEB-INF/account/setnewpassword.jsp
+diff --git a/web/enteractivationcode.jsp b/web/WEB-INF/account/enteractivationcode.jsp
+rename from web/enteractivationcode.jsp
+rename to web/WEB-INF/account/enteractivationcode.jsp

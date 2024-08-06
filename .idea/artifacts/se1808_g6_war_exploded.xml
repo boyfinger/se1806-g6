@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="se1808-g6:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/se1808_g6_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="se1808-g6" />
+          <element id="library" level="application" name="jquery-3.6.0" />
+          <element id="library" level="application" name="jquery-3.4.1" />
+          <element id="library" level="application" name="font-awesome" />
+          <element id="library" level="application" name="buttons" />
+          <element id="library" level="application" name="bootstrap.bundle" />
+          <element id="library" level="application" name="bootstrap" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib1" />
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="org-netbeans-modules-java-j2seproject-copylibstask" />
+          <element id="library" level="project" name="xmlbeans-5.1.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="se1808-g6/web/Web" />
+      <element id="javaee-facet-resources" facet="se1808-g6/web/Web2" />
+    </root>
+  </artifact>
+</component>

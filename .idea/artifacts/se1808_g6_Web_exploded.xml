@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="se1808-g6:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/se1808_g6_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="se1808-g6/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="se1808-g6" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="se1808-g6/web/Web2" />
+      <element id="artifact" artifact-name="se1808-g6:war exploded" />
+    </root>
+  </artifact>
+</component>
